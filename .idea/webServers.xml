@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b17141cb-a8f3-4621-a0c8-83688eb7b991" name="Kimsia DO 1">
+        <fileTransfer accessType="SFTP" host="174.138.30.13" port="22" sshConfigId="0a23ac95-23d4-434d-b5f1-4b0833da3c48" sshConfig="root@174.138.30.13:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
