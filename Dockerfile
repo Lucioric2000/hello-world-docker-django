@@ -7,9 +7,8 @@ WORKDIR /app
 COPY . /app
 RUN python -mensurepip
 RUN pip install -r /app/requirements.txt
-#CMD ["node", "src/index.js"] 64ac17b1957ff3264e32b8a6
 EXPOSE 8000
-#PORT 8000
-#RUN python /app/week9/pather.py
-ENTRYPOINT ["python"]
-CMD ["/app/hello_world/manage.py", "runserver", "0.0.0.0:8000"]
+RUN which python
+#build docker build -t lucioric/hello-world-docker-django-lucio .
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["python", "/app/hello_world/manage.py", "runserver", "0.0.0.0:8000"]
